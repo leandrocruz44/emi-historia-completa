@@ -154,6 +154,12 @@ main {
   .modal-content {
     width: 100%;
   }
+
+  .close {
+    position: absolute;
+    top: 80%;
+    right: 50%;
+  }
 }
 
 .text {
