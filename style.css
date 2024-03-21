@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'artifika', serif;
+  src: url('https://fonts.googleapis.com/css2?family=Artifika&display=swap');
+}
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'artifika';
+}
+
+.container {
+  height: 928px;
+  width: 100vw;
+}
+
+header {
+  background-image: url(images/PatternBlue.png);
+  height: 128px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  position: absolute;
+  top: 45px;
+  left: 490px;
+  font-size: 32px;
+  font-weight: bolder;
+  color: white;
+}
+
+.title {
+  width: 296px;
+  height: 64px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  font-size: 32px;
+  font-weight: bolder;
+  color: #FEB8FF;
+  -webkit-text-stroke: 0.6px black;
+  text-shadow: 1px 1px 2px black;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-image: url(images/PatternPink.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 3200px;
+}
+
+.collectionContainer {
+  width: 340px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.image {
+  width: 160px;
+  transition: all 0.3s ease-in;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image2 {
+  width: 300px;
+  transition: all 0.3s ease-in;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.image:hover {
+  opacity: 0.7;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from { transform: scale(0) }
+  to { transform: scale(1) }
+}
+
+.close {
+  position: absolute;
+  top: 35px;
+  right: 280px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* .biggerImage {
+  width: 350px;
+  transition: all 0.3s ease-in;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+} */
+
+.text {
+  text-align: center;
+  line-height: 150%;
+  margin: 48px 0;
+  width: 336px;
+  font-size: 14px;
+}
