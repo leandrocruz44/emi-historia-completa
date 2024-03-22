@@ -19,17 +19,17 @@ header {
   background-image: url(images/PatternBlue.png);
   height: 128px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .back {
   position: absolute;
-  top: 45px;
-  left: 490px;
+  top: 58px;
+  left: 30px;
   font-size: 32px;
   font-weight: bolder;
-  color: white;
+  color: magenta;
 }
 
 .title {
@@ -61,12 +61,13 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 3150px;
+  height: 3470px;
 }
 
 #doarButton {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .float {
@@ -86,16 +87,14 @@ main {
 }
 
 .collectionContainer {
-  width: 340px;
   display: flex;
   gap: 20px;
-  flex-wrap: wrap;
 }
 
 .image {
-  width: 160px;
+  width: 260px;
   transition: all 0.3s ease-in;
-  border-radius: 100px;
+  border-radius: 130px;
   cursor: pointer;
   box-shadow: 2px 2px 5px black;
 }
@@ -172,6 +171,10 @@ main {
 }
 
 @media only screen and (max-width: 700px) {
+  .image {
+    width: 160px;
+  }
+
   .modal-content {
     width: 100%;
   }
@@ -181,6 +184,13 @@ main {
     top: 80%;
     right: 50%;
   }
+
+  .collectionContainer {
+    width: 340px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 }
 
 .text {
@@ -189,4 +199,10 @@ main {
   margin: 48px 0;
   width: 336px;
   font-size: 14px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px 5px;
 }
