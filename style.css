@@ -61,7 +61,28 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 3200px;
+  height: 3150px;
+}
+
+#doarButton {
+  display: flex;
+  justify-content: center;
+}
+
+.float {
+  position: fixed;
+  top: 85%;
+  background-image: url(images/PatternBlue.png);
+  width: 260px;
+  height: 64px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 1px solid;
+  border-radius: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .collectionContainer {
