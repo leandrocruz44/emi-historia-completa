@@ -1,13 +1,3 @@
-// function bigImage(id) {
-//   const element = document.getElementById(id)
-//   if (element.classList.value == 'image') {
-//     element.classList.replace('image', 'biggerImage')
-//   } else {
-//     element.classList.replace('biggerImage', 'image')
-//   }
-// }
-
-
 function openModal(x) {
   const idNum = x.slice(-2)
   const modal = document.getElementById(`myModal${idNum}`)

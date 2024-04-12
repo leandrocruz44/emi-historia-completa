@@ -21,15 +21,16 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #C0E3FE;
 }
 
 .back {
   position: absolute;
   top: 58px;
-  left: 20px;
+  left: 15px;
   font-size: 32px;
   font-weight: bolder;
-  color: magenta;
+  color: #FFB5D3;
 }
 
 .title {
@@ -88,7 +89,7 @@ main {
 
 .collectionContainer {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .image {
@@ -187,7 +188,6 @@ main {
 
   .collectionContainer {
     width: 340px;
-    display: flex;
     gap: 20px;
     flex-wrap: wrap;
   }
